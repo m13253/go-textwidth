@@ -40,6 +40,11 @@ Therefore, the result is:
 rows = 3, columns = 44, total = 284
 ```
 
+## Bugs
+
+This library does not support Middle East languages requiring special BiDi
+shaping algorithms contributions are welcome.
+
 ## License
 
 go-textwidth is released under MIT license. Please see [LICENSE](LICENSE) for

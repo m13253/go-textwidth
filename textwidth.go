@@ -41,7 +41,7 @@ const tabMask = 7
 // To disable text wrapping, specify `wrapColumn = 0`. In this mode, `\n`, `\v`,
 // and `\f` will behave as a normal space.
 //
-// However, this algorithm does not support Middle East languages requiring
+// However, this function does not support Middle East languages requiring
 // special BiDi shaping algorithms.
 func GetTextWidth(s string, startColumn, wrapColumn int) int {
 	wrapEnabled := startColumn < wrapColumn
@@ -65,7 +65,7 @@ func GetTextWidth(s string, startColumn, wrapColumn int) int {
 // To disable text wrapping, specify `wrapColumn = 0`. In this mode, ``\v` and
 // `\f` behave as if the line is infinity in length.
 //
-// However, this algorithm does not support Middle East languages requiring
+// However, this function does not support Middle East languages requiring
 // special BiDi shaping algorithms.
 func GetTextOffset(s string, startColumn, wrapColumn int) (rows, endColumn int) {
 	wrapEnabled := startColumn < wrapColumn
