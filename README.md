@@ -3,6 +3,11 @@
 Go library to determine the required columns and rows for a Unicode string to
 display in a terminal
 
+## Features
+
+The key feature of this library is that it supports East Asian languages, where
+some characters may occupy 2 columns on a terminal.
+
 ## Usage
 
 ```go
@@ -43,7 +48,10 @@ rows = 3, columns = 44, total = 284
 ## Bugs
 
 This library does not support Middle East languages requiring special BiDi
-shaping algorithms contributions are welcome.
+shaping algorithms. Maybe the library will work out-of-the box, but maybe it
+will not work.
+
+Contributions are welcome.
 
 ## License
 
